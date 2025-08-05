@@ -1,4 +1,4 @@
-package org.example.NQueensAPI;
+package org.example;
 
 import io.javalin.Javalin;
 import java.util.List;

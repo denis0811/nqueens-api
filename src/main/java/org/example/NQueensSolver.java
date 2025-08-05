@@ -1,4 +1,4 @@
-package org.example.NQueensAPI;
+package org.example;
 
 import java.util.ArrayList;
 import java.util.List;
