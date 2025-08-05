@@ -1,6 +1,6 @@
 # Stage 1: The Build Stage
 # Use a Maven image with Java 8 to build the application
-FROM maven:3.9.6-openjdk-8-slim AS builder
+FROM maven:3-openjdk-8-slim AS builder
 
 # Set the working directory inside the container
 WORKDIR /app
@@ -28,3 +28,4 @@ COPY --from=builder /app/target/NQueensAPI-1.0-SNAPSHOT.jar .
 # The command to run the application
 # We run the fat JAR directly, no classpath needed
 CMD ["java", "-jar", "NQueensAPI-1.0-SNAPSHOT.jar"]
+
