@@ -31,6 +31,7 @@ public class NQueensAPI {
                 }
             } catch (NumberFormatException e) {
                 ctx.status(400).result("Error: Please provide a valid number.");
+                //change to verify github saved
             }
         });
     }
